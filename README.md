@@ -1,2 +1,2 @@
 # String
-Write a java program to count the number of occurance of character in string using Collection
+This repository contain the programming solution on the string problem?
