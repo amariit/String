@@ -1,0 +1,30 @@
+Write a java program to remove the repeated character of a string?
+
+import java.util.Scanner;
+
+public class removerepetaed {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the String : ");
+		String s=sc.next();
+		removeDuplicate(s);
+	}
+
+	private static void removeDuplicate(String s) {
+		int len = s.length();
+		char []c=s.toCharArray();
+		for(int i=0;i<len;i++) {
+			int j;
+			for(j=0;j<i;j++) {
+				if(s.charAt(i)==s.charAt(j)) {
+					break;
+				}
+			}
+			if(i==j) {
+				System.out.print(s.charAt(i));
+			}
+		}
+	}
+
+}
