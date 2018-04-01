@@ -1,5 +1,6 @@
 Write a java program to remove the repeated character of a string?
 
+1.Using 2 for loop
 import java.util.Scanner;
 
 public class removerepetaed {
@@ -27,4 +28,58 @@ public class removerepetaed {
 		}
 	}
 
+}
+
+2. Using Collection TreeSet
+
+import java.util.Iterator;
+import java.util.Scanner;
+import java.util.TreeSet;
+
+public class removeDuplicate {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String s = sc.nextLine();
+		TreeSet<Character> ts = new TreeSet<>();
+		for(int i=0;i<s.length();i++) {
+			ts.add(s.charAt(i));
+		}
+		System.out.println("String without repeating character : ");
+		Iterator it=ts.iterator();
+		while(it.hasNext()) {
+				System.out.print(it.next());
+		}
+	}
+
+}
+
+3. Using Collection HashMap
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class removeDuplicate {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String s = sc.nextLine();
+		HashMap<Character> hm = new HashMap<>();
+		for(char c : s.toCharArray() {
+			if(hm.containsKey(c)){
+				hm.put(c,hm.get(c)+1);
+			}
+			else{
+				hm.put(c,1);
+			}
+		}
+		System.out.println("String without repeating character : ");
+		for(char c : hm.ketSet()){
+			if(hm.get(c)<=2){
+				System.out.print(c);
+			}
+		}
+	}
 }
