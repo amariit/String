@@ -1,4 +1,8 @@
 Write a java program to find the total occurance of character of string?
+	
+_______________________________*************************************************_____________________________________________
+
+Code : 
 
 import java.util.HashMap;
 import java.util.Scanner;
