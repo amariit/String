@@ -1,6 +1,9 @@
 Write a java program to remove the repeated character of a string?
 
-1.Using 2 for loop
+__________________________________***************************************************____________________________________________
+
+Code :  1.Using 2 for loop
+
 import java.util.Scanner;
 
 public class removerepetaed {
@@ -30,7 +33,7 @@ public class removerepetaed {
 
 }
 
-2. Using Collection TreeSet
+Code : 2. Using Collection TreeSet
 
 import java.util.Iterator;
 import java.util.Scanner;
@@ -55,7 +58,7 @@ public class removeDuplicate {
 
 }
 
-3. Using Collection HashMap
+Code : 3. Using Collection HashMap
 
 import java.util.HashMap;
 import java.util.Scanner;
