@@ -1,5 +1,9 @@
 Write a java code to count the total number of word occurance in string
 
+________________________________******************************************_____________________________________________________
+
+Code : 
+
 import java.util.Scanner;
 
 public class wordcount {
